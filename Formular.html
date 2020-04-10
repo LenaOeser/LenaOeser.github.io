@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <link rel="icon" type="image/png" href="Webics.png">
+    <title> Anmeldung </title>
+    <meta charset="utf-8"/>
+  </head>
+  <body>
+    <header>
+      <a href="Startseite.html">Startseite</a>
+      <h1>Anmeldung</h1>
+      <nav>
+        <a href="Hygieneschulung.html">Hygieneschulungen</a>
+        <a href="Leistungen.html">Leistungen</a>
+        <a href="Preise.html">Preise</a>
+        <a href="Formular.html">Anmeldung</a>
+      </nav>
+    </header>
+    <p>
+      Bitte füllen Sie das Formular aus um sich für einen Termin anzumelden. <br>
+      Wir werden uns bei der von Ihnen angegebenen Email-Adresse melden.
+    </p>
+    <form>
+      <table>
+        <tr>
+          <td><label for="vorname">Vorname: </label></td>
+          <td><input type="text" name="vorname"></td>
+        </tr>
+        <tr>
+          <td><label for="nachname">Nachname: </label></td>
+          <td><input type="text" name="nachname"></td>
+        </tr>
+        <tr>
+          <td><label for="Firma">Firmenname: </label></td>
+          <td><input type="text" name="Firma"></td>
+        </tr>
+        <tr>
+          <td><label for="Email">E-Mail: </label></td>
+          <td><input type="text" name="Email"></td>
+        </tr>
+        <tr>
+          <td><label for="telefon">Telefonnummer: </label></td>
+          <td><input type="text" name="telefon"></td>
+        </tr>
+        <tr>
+          <td><label for="Schulungen">Bitte wählen Sie aus: </label></td>
+          <td>
+            <select name="Schulungen">
+              <option value="0">- nicht angegeben -</option>
+              <option value="1s">Lebensmittel</option>
+              <option value="2s">Pflege</option>
+              <option value="3s">Medizintechnik</option>
+              <option value="4s">Infektionsschutz</option>
+              <option value="1s">Operationen</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="Daten">Datenspeicherung </label></td>
+          <td><input type="checkbox" name="Daten" value="check"></td>
+        </tr>
+        <tr>
+          <td>Art der Schulung: </td>
+        </tr>
+        <tr>
+          <td><label for="ih">Inhouse</label></td>
+          <td><input type="radio" name="ih" value="Inhouse"></td>
+          <td><label for="hs">Heimschulung</label></td>
+          <td><input type="radio" name="hs" value="Heimschulung"></td>
+        </tr>
+        <tr>
+          <td>Wenn Inhouse, dann </td>
+        </tr>
+        <tr>
+          <td><label for="anzahl">Anzahl der Teilnehmer:</label></td>
+          <td><input type="number" name="anzahl" value="0" max="20" step="1"></td>
+        </tr>
+        <tr>
+          <td><label for="datum">Wunschtermin: </label></td>
+          <td><input type="date" name="datum"></td>
+        </tr>
+        <tr>
+          <td><label for="Freitext">Sonstiges: </label></td>
+          <td><textarea name="Freitext" rows="5" cols="30"></textarea></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="submit" name="senden" value="Absenden"></td>
+        </tr>
+      </table>
+
+    </form>
+    <footer>
+      <a href="Kontakt.html">Kontakt</a>
+      <a href="Ueberuns.html">Über uns</a>
+    </footer>
+
+  </body>
+</html>
